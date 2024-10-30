@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Cyber Academy</h1>
+  <h2>Popular Courses</h2>
+
+  <!-- Bara de căutare -->
+  <div class="search-bar">
+    <input type="text" id="search-input" placeholder="Search courses...">
+    <button id="search-button">🔍</button>
+  </div>
+
+  <!-- Lista cursurilor -->
+  <div id="courses-list">
+    <!-- Cursurile vor fi generate dinamic aici -->
+  </div>
+
+  <!-- Detalii curs -->
+  <div id="course-details" class="details" style="display: none;">
+    <span class="back-btn" onclick="showCoursesList()">← Back to courses</span>
+    <h2 id="course-title"></h2>
+    <p id="course-instructor"></p>
+    <p id="course-level"></p>
+    <p id="course-duration"></p>
+    <p id="course-description"></p>
+    <a id="course-pdf" href="#" target="_blank">Download PDF</a>
+  </div>
+
+  <footer class="footer">
+    <p>© 2024 CyberAcad. All rights reserved.</p>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
